@@ -199,6 +199,7 @@ int rt_hw_ethernet_init()
 
     if (result == RT_EOK)
     {
+        rt_kprintf("rt_thread_startup...ethernet_thread....\r\n");
         rt_thread_startup(&ethernet_thread);// Æô¶¯ethernet_thread³Ì
     }
 
